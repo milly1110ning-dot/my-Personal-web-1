@@ -1,0 +1,164 @@
+/* Global Styles & Variables */
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Kosugi+Maru&display=swap');
+
+:root {
+  /* Color Palette - Creamy/Cute Theme */
+  --bg-primary: #FEF9E7;
+  /* Soft Cream */
+  --bg-secondary: #FFF8E1;
+  /* Lighter Cream */
+  --bg-tertiary: #FFF0F5;
+  /* Pale Pinkish Cream */
+
+  --text-primary: #5D4037;
+  /* Coffee/Brown */
+  --text-secondary: #8D6E63;
+  /* Lighter Brown */
+  --text-accent: #FF8A65;
+  /* Soft Orange */
+
+  --accent-primary: #FFB74D;
+  /* Warm Yellow/Orange */
+  --accent-secondary: #F48FB1;
+  /* Macaron Pink */
+  --accent-gradient: linear-gradient(135deg, #FFB74D 0%, #F48FB1 100%);
+
+  --border-color: #FFE0B2;
+
+  --font-heading: 'ZCOOL KuaiLe', cursive;
+  --font-body: 'Kosugi Maru', -apple-system, sans-serif;
+  /* Rounded Sans */
+
+  /* Spacing & Shapes */
+  --container-width: 1200px;
+  --header-height: 80px;
+  --radius-sm: 12px;
+  --radius-md: 24px;
+  --radius-lg: 32px;
+  --radius-full: 9999px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  /* Font itself is bold enough */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: var(--radius-md);
+}
+
+/* Utilities */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.gradient-text {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /* Bouncy transition */
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(93, 64, 55, 0.1);
+}
+
+.btn-primary {
+  background: var(--accent-gradient);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 8px 15px rgba(244, 143, 177, 0.3);
+}
+
+.btn-secondary {
+  background: white;
+  border: 2px solid var(--accent-secondary);
+  color: var(--accent-secondary);
+}
+
+.btn-secondary:hover {
+  background: var(--accent-secondary);
+  color: white;
+  transform: scale(1.05) translateY(-2px);
+}
+
+.section {
+  padding: 6rem 0;
+}
+
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: var(--text-primary);
+  text-shadow: 2px 2px 0px rgba(255, 183, 77, 0.3);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-primary);
+  border-radius: var(--radius-full);
+  border: 2px solid var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-secondary);
+}
