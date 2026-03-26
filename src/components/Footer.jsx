@@ -11,7 +11,7 @@ const Footer = () => {
             background: 'var(--bg-secondary)'
         }}>
             <div className="container">
-                <p>&copy; {new Date().getFullYear()} 個人形象網站. Design with ❤️ by Milly.</p>
+                <p>&copy; {new Date().getFullYear()} 個人形象網站</p>
             </div>
         </footer>
     );
