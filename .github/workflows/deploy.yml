@@ -13,5 +13,5 @@ jobs:
         username: ${{ secrets.GCP_USERNAME }}
         key: ${{ secrets.GCP_SSH_PRIVATE_KEY }}
         script: |
-          cd ~/my-Personal
+          cd ~/y-Personal-web-1
           ./update.sh
