@@ -12,7 +12,7 @@ const Hero = () => {
                     transition={{ duration: 0.8 }}
                 >
                     <h1 style={{ fontSize: '4rem', marginBottom: '1.5rem', color: 'var(--text-primary)' }}>
-                        哈囉，我是 <span className="gradient-text">你的名子</span>
+                        哈囉，我是 <span className="gradient-text">徐瑋甯</span>
                         <span style={{ fontSize: '3rem' }}> 👋</span>
                     </h1>
                 </motion.div>
